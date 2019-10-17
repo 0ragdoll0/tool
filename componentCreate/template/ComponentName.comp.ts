@@ -88,7 +88,7 @@ class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
    * methods
    **************************************************************************/
 
-  private async fetchData() {
+  private async fetchData(): Promise<void> {
     // TODO
   }
 
@@ -97,7 +97,7 @@ class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
    **************************************************************************/
 
   // beforeCreate() {},
-  created() {
+  created(): void {
     this.fetchData()
   }
   // beforeMount() {},
