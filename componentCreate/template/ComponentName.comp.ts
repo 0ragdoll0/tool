@@ -25,32 +25,60 @@ import Component /*, { mixins } */ from 'vue-class-component'
   // TODO
   // },
 })
+@Component({
+  // name: '',
+  // el: '#id',
+  // components: {
+  // TODO
+  // },
+  // filters and directives can be extracted to other files
+  // filters: {
+  // TODO
+  // },
+  // directives: {
+  // TODO
+  // },
+})
 class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
   /**************************************************************************
    * props
    **************************************************************************/
 
-  // @Prop({ type: String, required: true })
+  // @Prop({
+  // type: String,
+  // required: true
+  // })
   // private readonly requiredProp!: string
-  // @Prop({ type: String, default: '' })
+
+  // @Prop({
+  // type: String,
+  // default: ''
+  // })
   // private readonly propWithDefault!: string
-  // @Prop({ type: String })
-  // private readonly prop: string | undefined
+
+  // @Prop({
+  // type: String
+  // })
+  // private readonly prop!: string | undefined
 
   /**************************************************************************
    * vuex map state / getters / actions
    **************************************************************************/
 
   // @State
-  // private readonly foo
-  // @storeModule.State('name')
-  // private readonly stateName: string | null
+  // private readonly foo!
+
   // @Getter
-  // private readonly bar
+  // private readonly bar!
+
   // @Action
-  // private baz
+  // private baz!
+
   // @Action('foo')
-  // private aliasFoo
+  // private aliasFoo!
+
+  // @storeModule.State('name')
+  // private readonly stateName!: string | null
 
   /**************************************************************************
    * data
@@ -72,6 +100,7 @@ class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
    **************************************************************************/
   // @Ref()
   // private readonly anotherComponent!: AnotherComponent
+
   // @Ref('button-name')
   // private readonly button!: HTMLButtonElement
 
@@ -80,7 +109,7 @@ class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
    **************************************************************************/
 
   // @Watch('dataName')
-  // dataNameOnChange(newValue: number, oldValue: number) {
+  // dataNameOnChange(newValue: number, oldValue: number): void {
   // TODO
   // }
 
@@ -96,16 +125,17 @@ class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
    * life cycle
    **************************************************************************/
 
-  // beforeCreate() {},
+  // beforeCreate(): void {}
   created(): void {
     this.fetchData()
   }
-  // beforeMount() {},
-  // mounted() {},
-  // beforeUpate() {},
-  // updated() {},
-  // beforeDestroy() {},
-  // destroyed() {},
+  // beforeMount(): void {}
+  // mounted(): void {}
+  // beforeUpate(): void {}
+  // updated(): void {}
+  // beforeDestroy(): void {}
+  // destroyed(): void {}
 }
+
 
 export default ComponentName
