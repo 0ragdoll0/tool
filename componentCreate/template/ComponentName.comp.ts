@@ -25,20 +25,7 @@ import Component /*, { mixins } */ from 'vue-class-component'
   // TODO
   // },
 })
-@Component({
-  // name: '',
-  // el: '#id',
-  // components: {
-  // TODO
-  // },
-  // filters and directives can be extracted to other files
-  // filters: {
-  // TODO
-  // },
-  // directives: {
-  // TODO
-  // },
-})
+
 class ComponentName extends Vue /*mixins(ComponentNameMixin) */ {
   /**************************************************************************
    * props
